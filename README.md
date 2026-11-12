@@ -8,21 +8,12 @@ A personal collection of software development notes, cheat sheets, command refer
 
 | Topic | Description | Status |
 | :--- | :--- | :---: |
+| [🐘 PostgreSQL](./postgresql/README.md) | Queries, indexing & database optimization | 🟢 OK |
+| [🐳 Docker](./docker/README.md) | Containers, Dockerfile, & Docker Compose | 🟢 OK |
 | [🐧 Linux](./linux/README.md) | Command line, shell scripting, & server setup | 🟡 In Progress |
 | [⚛️ React](./react/README.md) | Hooks, state management, & component patterns | 🟡 In Progress |
 | [🍃 Spring Boot](./springboot/README.md) | Java framework, REST API, & architecture | 🟡 In Progress |
-| [🐘 PostgreSQL](./postgresql/README.md) | Queries, indexing & database optimization | 🟡 In Progress |
-| [🐳 Docker](./docker/README.md) | Containers, Dockerfile, & Docker Compose | 🟡 In Progress |
 | [🔀 Git](./git/README.md) | Version control, branching stages, & CLI | 🔴 Planned |
-
----
-
-## 💡 Quick Links / Most Used
-
-- ⚡ Top Linux Commands
-- ⚡ React Hooks Reference
-- ⚡ Spring Boot Annotations
-- ⚡ Git Workflow & Commands
 
 ---
 
