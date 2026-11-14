@@ -2,7 +2,7 @@
 
 [🏠 Home](../README.md) > [🐘 PostgreSQL](./README.md)
 
-## 📌 Index Types & When to Use Them
+## Index Types & When to Use Them
 
 | Index Type | Best For | Example Operators |
 | :--- | :--- | :--- |
