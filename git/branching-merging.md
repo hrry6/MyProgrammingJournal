@@ -1,15 +1,15 @@
-# 🌿 Branching, Merge & Rebase
+# 🔀 Branching & Merging
 
 [🏠 Home](../README.md) > [🔀 Git](./README.md)
 
-## 🔀 Branch Management
+## 🌿 Branch Management
 
 ```bash
-# List local and remote branches
+# List all local and remote branches
 git branch -a
 
 # Create and switch to a new branch (modern syntax)
-git switch -c feat/oauth-login
+git switch -c feat/payment-gateway
 
 # Switch back to the previous branch
 git switch -
@@ -17,34 +17,53 @@ git switch -
 # Rename current branch
 git branch -m new-branch-name
 
-# Delete a merged local branch (-D to force delete unmerged)
-git branch -d feat/oauth-login
+# Delete local branch (-d = safe/merged only, -D = force delete)
+git branch -d feat/payment-gateway
+
+# Delete a remote branch
+git push origin --delete feat/payment-gateway
 ```
 
-## 🔗 Merge vs. Rebase
+## ⚖️ `merge` vs `rebase`
 
-| Strategy | Command | When to Use |
-| :--- | :--- | :--- |
-| **Merge** | `git merge feat/login` | Preserves exact branch history with a merge commit; safest for shared branches (`main`, `develop`). |
-| **Rebase** | `git rebase main` | Replays your feature commits on top of `main` for a clean, linear history. **Never rebase public/shared branches.** |
+| Strategy | Command | History Shape | Best Used When |
+| :--- | :--- | :--- | :--- |
+| **Merge** | `git merge feat/login` | Preserves true chronology with a merge commit | Merging finished PRs into `main` or shared branches |
+| **Rebase** | `git rebase main` | Linear, clean commit history (replays commits on top) | Updating your local feature branch with latest `main` |
 
-### Interactive Rebase (Squashing Commits)
-
-Clean up messy WIP commits before opening a Pull Request:
+> **Golden Rule of Rebase:** Never rebase commits that have already been pushed to a shared/public branch (`main`, `develop`). Rebase rewrites commit hashes and will break history for teammates.
 
 ```bash
-# Squash or edit the last 3 commits
-git rebase -i HEAD~3
-# In the editor, change 'pick' to 'squash' (or 's') to merge into the previous commit
+# Force a merge commit even if fast-forward is possible
+git merge --no-ff feat/login
+
+# Only merge if fast-forward is possible (no extra merge commit)
+git merge --ff-only feat/login
+
+# Update feature branch with latest changes from main
+git switch feat/login
+git rebase main
 ```
 
-## 🍒 Cherry-Pick & Conflicts
+## ⚔️ Resolving Merge Conflicts
+
+When Git pauses with `CONFLICT (content)`:
 
 ```bash
-# Copy a specific commit from another branch onto your current branch
-git cherry-pick <commit-hash>
+# 1. Check which files have conflicts
+git status
 
-# Abort an ongoing merge or rebase if conflicts get messy
+# 2. Option A: Manually edit conflict markers (<<<<<<<, =======, >>>>>>>)
+#    Option B: Accept one side completely for a specific file
+git checkout --ours <file>    # Keep current branch's version
+git checkout --theirs <file>  # Keep incoming branch's version
+
+# 3. Mark conflict as resolved and complete the operation
+git add <file>
+git commit                    # If resolving a merge
+git rebase --continue         # If resolving a rebase
+
+# Abort and return to pre-conflict state at any time
 git merge --abort
 git rebase --abort
 ```

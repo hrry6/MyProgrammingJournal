@@ -1,6 +1,6 @@
 # 🔀 Git
 
-Version control essentials, branching strategies, undoing mistakes safely, remote workflows, and commit conventions.
+Version control essentials, branching workflows, history rewriting, conflict resolution, and disaster recovery.
 
 [⬅️ Back to Home](../README.md)
 
@@ -10,8 +10,9 @@ Version control essentials, branching strategies, undoing mistakes safely, remot
 
 | Notes | Description |
 | :--- | :--- |
-| [Git CLI Cheatsheet](./cli-cheatsheet.md) | Staging chunks, compact logs, diffs, and stashing workflows |
-| [Branching, Merge & Rebase](./branching-merging.md) | Creating branches, `merge` vs `rebase`, `cherry-pick`, and conflict resolution |
-| [Undoing Mistakes & Recovery](./undoing-mistakes.md) | `restore`, `reset`, `revert`, and recovering lost commits via `reflog` |
-| [Remotes & Collaboration](./remotes-collaboration.md) | `fetch` vs `pull --rebase`, `--force-with-lease`, and pruning stale branches |
-| [Conventions & Config](./conventions-config.md) | Conventional Commits, useful `.gitconfig` settings, and `.gitignore` fixes |
+| [Setup & Daily Workflow](./daily-workflow.md) | Config, staging, commits, `diff`, `log` formatting, and `.gitignore` |
+| [Branching & Merging](./branching-merging.md) | Branch management, `merge` vs `rebase`, and resolving merge conflicts |
+| [Stashing & Worktrees](./stash-worktree.md) | Shelving unfinished changes with `stash` and parallel checkouts with `worktree` |
+| [Rewriting History](./rewriting-history.md) | `commit --amend`, interactive rebase (`rebase -i`), `squash`, and `cherry-pick` |
+| [Undo & Disaster Recovery](./undo-recovery.md) | `restore`, `reset` (`--soft`/`--hard`), `revert`, and rescuing lost commits via `reflog` |
+| [Remote, Tags & Submodules](./remotes-tags.md) | Upstream tracking, release tagging (`semver`), SSH keys, and submodules |
