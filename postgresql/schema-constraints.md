@@ -1,8 +1,8 @@
-# 🏗️ Schema, UUIDs & Constraints
+# Schema, UUIDs & Constraints
 
 [🏠 Home](../README.md) > [🐘 PostgreSQL](./README.md)
 
-## 🆔 Generating UUID
+## Generating UUID
 
 PostgreSQL 13+ includes `gen_random_uuid()` natively (UUID v4) without needing external extensions.
 
@@ -15,7 +15,7 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 SELECT uuid_generate_v4();
 ```
 
-## 🔗 Reference & Constraints Cheatsheet
+## Reference & Constraints Cheatsheet
 
 ```sql
 CREATE TABLE organizations(
@@ -52,7 +52,7 @@ CREATE TABLE users (
 );
 ```
 
-## 🛡️ Foreign Key `ON DELETE` and `ON UPDATE` Actions
+## Foreign Key `ON DELETE` and `ON UPDATE` Actions
 
 | Action | Behavior when parent is deleted | Behavior when parent is updated |
 | :--- | :--- | :--- |
@@ -62,7 +62,7 @@ CREATE TABLE users (
 | `RESTRICT` | Blocks delete immidiately if child rows exists | Blocks update immidiately if child rows exists |
 | `NO ACTION` | Simmilar to `RESTRICT`, but checked at the end of transations | Simmilar to `RESTRICT`, but checked at the end of transations |
 
-## 🔧 Altering Constraints on Existing Tables
+## Altering Constraints on Existing Tables
 
 ```sql
 --- Add a check constraint

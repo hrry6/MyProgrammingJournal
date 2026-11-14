@@ -1,8 +1,8 @@
-# 🐛 Debugging & Troubleshooting
+# Debugging & Troubleshooting
 
 [🏠 Home](../README.md) > [🐳 Docker](./README.md)
 
-## 📊 Monitoring & Inspection
+## Monitoring & Inspection
 
 ```bash
 # Live CPU, memory, and network I/O usage
@@ -18,7 +18,7 @@ docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' my-a
 docker top my-app
 ```
 
-## 🚨 Common Exit Codes
+## Common Exit Codes
 
 | Exit Code | Meaning | Typical Cause |
 | :--- | :--- | :--- |
@@ -27,7 +27,7 @@ docker top my-app
 | `137` | `SIGKILL` (128 + 9) | Container killed by OS **OOMKiller** (out of memory) or `docker kill` |
 | `143` | `SIGTERM` (128 + 15) | Graceful shutdown triggered by `docker stop` |
 
-## 🛠️ Debugging a Crashing Container
+## Debugging a Crashing Container
 
 If a container exits immediately before you can run `docker exec`:
 

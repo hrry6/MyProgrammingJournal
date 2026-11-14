@@ -26,7 +26,7 @@ Structured backend engineering notes, production blueprints, and reusable patter
 
 ---
 
-## Reference Project Structure (Modular Monolith)
+## 🌲 Reference Project Structure (Modular Monolith)
 
 ```text
 src

@@ -1,8 +1,8 @@
-# 🌐 Remotes, Tags & Submodules
+# Remotes, Tags & Submodules
 
 [🏠 Home](../README.md) > [🔀 Git](./README.md)
 
-## 📡 Remote Management & Fork Syncing
+## Remote Management & Fork Syncing
 
 ```bash
 # List remote repositories and URLs
@@ -24,7 +24,7 @@ git merge upstream/main
 git push origin main
 ```
 
-## 🛡️ Safe Force Pushing
+## Safe Force Pushing
 
 After an interactive rebase or `--amend` on your personal feature branch:
 
@@ -33,7 +33,7 @@ After an interactive rebase or `--amend` on your personal feature branch:
 git push --force-with-lease
 ```
 
-## 🏷️ Tags & Releases
+## Tags & Releases
 
 ```bash
 # Create an annotated tag (recommended for releases)
@@ -54,7 +54,7 @@ git tag -d v1.0.0
 git push origin --delete v1.0.0
 ```
 
-## 📦 Submodules
+## Submodules
 
 ```bash
 # Clone a repository along with all its submodules

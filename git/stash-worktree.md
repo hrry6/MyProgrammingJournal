@@ -1,8 +1,8 @@
-# 📦 Stashing & Worktrees
+# Stashing & Worktrees
 
 [🏠 Home](../README.md) > [🔀 Git](./README.md)
 
-## 🗄️ Stashing Unfinished Work (`git stash`)
+## Stashing Unfinished Work (`git stash`)
 
 Temporarily shelves dirty working directory changes so you can switch branches cleanly.
 
@@ -33,7 +33,7 @@ git stash drop stash@{0}
 git stash clear
 ```
 
-## 🌳 Parallel Checkouts (`git worktree`)
+## Parallel Checkouts (`git worktree`)
 
 Allows checking out multiple branches into separate directories simultaneously—no stashing or re-cloning needed when an urgent hotfix interrupts feature work.
 

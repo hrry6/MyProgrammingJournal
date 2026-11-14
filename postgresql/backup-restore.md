@@ -1,8 +1,8 @@
-# 💾 Backup & Restore
+# Backup & Restore
 
 [🏠 Home](../README.md) > [🐘 PostgreSQL](./README.md)
 
-## 📤 Export (`pg_dump`)
+## Export (`pg_dump`)
 
 ```bash
 # Custom compressed format (Recommended — supports parallel restore & selective tables)
@@ -18,7 +18,7 @@ pg_dump -U postgres -s -d my_db > schema.sql
 docker exec -t postgres_container pg_dump -U postgres -F c my_db > backup.dump
 ```
 
-## 📥 Import (`pg_restore` & `psql`)
+## Import (`pg_restore` & `psql`)
 
 ```bash
 # Restore from custom .dump file (--clean drops existing objects first)

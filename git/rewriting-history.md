@@ -1,8 +1,8 @@
-# ✍️ Rewriting History
+# Rewriting History
 
-[🏠 Home](../README.md) > [🔀 Git](./README.md)
+[🏠 Home](../README.md) > [🌿 Git](./README.md)
 
-## 🩹 Amending the Last Commit (`--amend`)
+## Amending the Last Commit (`--amend`)
 
 ```bash
 # Add forgotten files to the previous commit without changing the commit message
@@ -13,7 +13,7 @@ git commit --amend --no-edit
 git commit --amend -m "fix(api): handle null response payload"
 ```
 
-## 🧹 Interactive Rebase (`rebase -i`)
+## Interactive Rebase (`rebase -i`)
 
 Clean up messy WIP commits into logical, atomic commits before opening a Pull Request.
 
@@ -33,7 +33,7 @@ git rebase -i HEAD~4
 | `fixup` | `f` | Meld commit into the previous commit and discard its message |
 | `drop` | `d` | Delete the commit completely |
 
-## 🍒 Cherry-Picking (`git cherry-pick`)
+## Cherry-Picking (`git cherry-pick`)
 
 Apply specific commits from another branch onto your current branch without merging the entire branch.
 

@@ -1,8 +1,8 @@
-# 🧩 Docker Compose Patterns
+# Docker Compose Patterns
 
 [🏠 Home](../README.md) > [🐳 Docker](./README.md)
 
-## ⚡ Essential Commands (Compose V2)
+## Essential Commands (Compose V2)
 
 ```bash
 # Start all services in background
@@ -21,7 +21,7 @@ docker compose down -v
 docker compose logs -f db
 ```
 
-## 📄 Local Dev Setup (PostgreSQL + Redis)
+## Local Dev Setup (PostgreSQL + Redis)
 
 Clean starter `docker-compose.yml` for local development with auto-init SQL scripts and persistent storage.
 
@@ -56,7 +56,7 @@ volumes:
   redisdata:
 ```
 
-## 💡 Quick Notes
+## Quick Notes
 
 * **Auto-init SQL:** Any `.sql` or `.sh` files inside `./database/init` run automatically **only once** when `pgdata` volume is first created. To re-run them, wipe the volume with `docker compose down -v`.
 * **Redis Persistence:** `--appendonly yes` enables AOF persistence so cached data survives container restarts. Add `--requirepass yourpassword` if authentication is needed.

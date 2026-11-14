@@ -1,8 +1,8 @@
-# 🏗️ Dockerfile Best Practices
+# Dockerfile Best Practices
 
 [🏠 Home](../README.md) > [🐳 Docker](./README.md)
 
-## 📖 Core Instructions Reference
+## Core Instructions Reference
 
 | Instruction | Purpose | Key Note / Example |
 | :--- | :--- | :--- |
@@ -17,7 +17,7 @@
 | `ENTRYPOINT` | Configures the container's main executable | Hard to override; use *exec form* `["java", "-jar", "app.jar"]` so signals (`SIGTERM`) work properly |
 | `CMD` | Provides default arguments to `ENTRYPOINT` (or default command) | Easily overridden by passing arguments at the end of `docker run` |
 
-## 🚀 Multi-Stage Build Pattern
+## Multi-Stage Build Pattern
 
 Separates build dependencies (compilers, SDKs) from the final runtime image to drastically reduce image size and attack surface.
 
@@ -50,7 +50,7 @@ EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
 
-## 🛡️ Essential `.dockerignore`
+## Essential `.dockerignore`
 
 Prevents bloated build contexts and accidental leaks of secrets or local artifacts into the image.
 
@@ -67,7 +67,7 @@ build
 .vscode
 ```
 
-## 💡 Key Optimization Rules
+## Key Optimization Rules
 
 | Rule | Why it matters |
 | :--- | :--- |

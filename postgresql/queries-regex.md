@@ -1,8 +1,8 @@
-# 🔍 Queries, Upsert & Regex
+# Queries, Upsert & Regex
 
 [🏠 Home](../README.md) > [🐘 PostgreSQL](./README.md)
 
-## 🎯 Regex & Pattern Matching
+## Regex & Pattern Matching
 
 PostgreSQL uses POSIX regular expressions via `~` operators alongside standard `LIKE`/`ILIKE`.
 
@@ -25,7 +25,7 @@ SELECT substring('Order #INV-2026-99' FROM 'INV-\d+-\d+'); -- Returns: INV-2026-
 SELECT regexp_replace('0812-3456-7890', '[^0-9]', '', 'g'); -- Returns: 081234567890
 ```
 
-## 🔄 Upsert (`ON CONFLICT`) & `RETURNING`
+## Upsert (`ON CONFLICT`) & `RETURNING`
 
 ```sql
 -- Insert and return generated fields immediately
@@ -43,7 +43,7 @@ DO UPDATE SET
 RETURNING *;
 ```
 
-## 📦 `JSONB` Quick Operations
+## `JSONB` Quick Operations
 
 ```sql
 -- Query nested key as text (->>)

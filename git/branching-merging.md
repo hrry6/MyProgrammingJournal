@@ -1,8 +1,8 @@
-# 🔀 Branching & Merging
+# Branching & Merging
 
 [🏠 Home](../README.md) > [🔀 Git](./README.md)
 
-## 🌿 Branch Management
+## Branch Management
 
 ```bash
 # List all local and remote branches
@@ -45,7 +45,7 @@ git switch feat/login
 git rebase main
 ```
 
-## ⚔️ Resolving Merge Conflicts
+## Resolving Merge Conflicts
 
 When Git pauses with `CONFLICT (content)`:
 

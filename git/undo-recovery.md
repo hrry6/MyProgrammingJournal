@@ -1,8 +1,8 @@
-# 🚑 Undo & Disaster Recovery
+# Undo & Disaster Recovery
 
 [🏠 Home](../README.md) > [🔀 Git](./README.md)
 
-## 🧭 Choosing the Right Undo Tool
+## Choosing the Right Undo Tool
 
 | Scope | Command | Safe on Shared Branches? | Effect |
 | :--- | :--- | :--- | :--- |
@@ -10,7 +10,7 @@
 | **Local unpushed commits** | `git reset` | **No** (rewrites history) | Moves branch pointer backward |
 | **Pushed shared commits** | `git revert` | **Yes** | Creates a new inverse commit to undo changes |
 
-## 🔙 Discarding Local Changes (`git restore`)
+## Discarding Local Changes (`git restore`)
 
 ```bash
 # Discard unstaged changes in a specific file (irreversible)
@@ -23,7 +23,7 @@ git restore --staged src/App.tsx
 git restore .
 ```
 
-## ⏪ Moving Branch History Backward (`git reset`)
+## Moving Branch History Backward (`git reset`)
 
 ```bash
 # --soft: Undo last commit, keep all changes STAGED (great for re-committing)
@@ -36,7 +36,7 @@ git reset HEAD~1
 git reset --hard HEAD~1
 ```
 
-## 🔄 Safely Undoing Pushed Commits (`git revert`)
+## Safely Undoing Pushed Commits (`git revert`)
 
 ```bash
 # Create a new commit that reverses the changes of a specific commit
@@ -46,7 +46,7 @@ git revert <commit-hash>
 git revert -m 1 <merge-commit-hash>
 ```
 
-## 🕰️ Time Machine Recovery (`git reflog`)
+## Time Machine Recovery (`git reflog`)
 
 `reflog` records every movement of `HEAD` locally for ~90 days—even after `reset --hard` or deleted branches.
 

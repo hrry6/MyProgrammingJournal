@@ -1,8 +1,8 @@
-# 🛠️ Setup & Daily Workflow
+# Setup & Daily Workflow
 
 [🏠 Home](../README.md) > [🔀 Git](./README.md)
 
-## ⚙️ Essential Configuration
+## Essential Configuration
 
 ```bash
 # Identity
@@ -24,7 +24,7 @@ git config --global alias.lg "log --oneline --graph --decorate --all"
 git config --global alias.last "log -1 HEAD --stat"
 ```
 
-## 🔄 Core Daily Commands
+## Core Daily Commands
 
 ```bash
 # Compact status (M = modified, A = added, ?? = untracked)
@@ -48,7 +48,7 @@ git commit -m "feat(auth): add JWT refresh token rotation"
 | `docs:` | Documentation only (`README`, comments) |
 | `test:` | Adding or updating tests |
 
-## 🔍 Inspecting Diffs & History
+## Inspecting Diffs & History
 
 ```bash
 # Unstaged changes (working directory vs staging)
@@ -67,7 +67,7 @@ git show <commit-hash>
 git blame <file>
 ```
 
-## 🙈 `.gitignore` Management
+## `.gitignore` Management
 
 ```bash
 # Stop tracking a file that was already committed (keeps it on local disk)

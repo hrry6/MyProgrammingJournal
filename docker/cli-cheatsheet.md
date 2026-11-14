@@ -1,8 +1,8 @@
-# ⌨️ Docker CLI Cheatsheet
+# Docker CLI Cheatsheet
 
 [🏠 Home](../README.md) > [🐳 Docker](./README.md)
 
-## 📦 Container Lifecycle
+## Container Lifecycle
 
 ```bash
 # Run container in background (-d), map ports (-p host:container), and auto-remove on stop (--rm)
@@ -20,7 +20,7 @@ docker restart my-app
 docker rm -f my-app
 ```
 
-## 🔍 Logs & Shell Access
+## Logs & Shell Access
 
 ```bash
 # Follow live logs (--tail limits initial lines)
@@ -35,7 +35,7 @@ docker exec -it my-app bash
 docker exec my-app printenv
 ```
 
-## 🖼️ Image Management
+## Image Management
 
 ```bash
 # Build image from Dockerfile in current directory
@@ -48,7 +48,7 @@ docker images
 docker rmi my-app:1.0.0
 ```
 
-## 🧹 Disk Cleanup (`prune`)
+## Disk Cleanup (`prune`)
 
 ```bash
 # Remove all stopped containers, unused networks, and dangling images

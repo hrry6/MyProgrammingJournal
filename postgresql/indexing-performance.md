@@ -1,4 +1,4 @@
-# ⚡ Indexing & Performance
+# Indexing & Performance
 
 [🏠 Home](../README.md) > [🐘 PostgreSQL](./README.md)
 
@@ -32,7 +32,7 @@ CREATE INDEX CONCURRENTLY idx_logs_created_at ON logs(created_at);
 
 ---
 
-## 🔬 Query Analysis (`EXPLAIN ANALYZE`)
+## Query Analysis (`EXPLAIN ANALYZE`)
 
 Use `EXPLAIN (ANALYZE, BUFFERS)` to actually run the query and inspect real execution stats (avoid running `ANALYZE` on `DELETE`/`UPDATE` unless wrapped in a `ROLLBACK` transaction).
 
@@ -52,7 +52,7 @@ SELECT * FROM users WHERE email = 'dev@example.com';
 
 ---
 
-## 🧹 Maintenance & Inspection
+## Maintenance & Inspection
 
 ```sql
 -- Check total size of a table including all its indexes

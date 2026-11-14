@@ -1,8 +1,8 @@
-# ⌨️ psql CLI Cheatsheet
+# psql CLI Cheatsheet
 
 [🏠 Home](../README.md) > [🐘 PostgreSQL](./README.md)
 
-## ⚡ Quick Reference
+## Quick Reference
 
 ```bash
 # Connect to database
@@ -18,7 +18,7 @@ psql -U <username> -d <database> -c "SELECT version();"
 psql -U <username> -d <database> -f <file.sql>
 ```
 
-## 🛠️ Essential Meta-Commands
+## Essential Meta-Commands
 
 ### Database & Connection
 
