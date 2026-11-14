@@ -8,10 +8,10 @@ A personal collection of software development notes, cheat sheets, command refer
 
 | Topic | Description | Status |
 | :--- | :--- | :---: |
+| [🍃 Spring Boot](./springboot/README.md) | Java framework, REST API, & architecture | 🟢 OK |
 | [🔀 Git](./git/README.md) | Version control, branching stages, & CLI | 🟢 OK |
 | [🐘 PostgreSQL](./postgresql/README.md) | Queries, indexing & database optimization | 🟢 OK |
 | [🐳 Docker](./docker/README.md) | Containers, Dockerfile, & Docker Compose | 🟢 OK |
-| [🍃 Spring Boot](./springboot/README.md) | Java framework, REST API, & architecture | 🟡 In Progress |
 | [🐧 Linux](./linux/README.md) | Command line, shell scripting, & server setup | 🔴 Planned |
 | [⚛️ React](./react/README.md) | Hooks, state management, & component patterns | 🔴 Planned |
 
