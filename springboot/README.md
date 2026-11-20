@@ -23,6 +23,10 @@ Structured backend engineering notes, production blueprints, and reusable patter
 | [Service Layer & Transactions](./services-and-transactions.md) | Business logic encapsulation, `@Transactional` rules, and Hibernate dirty checking |
 | [Controllers & REST API Design](./controllers-and-rest-api.md) | `@RestController` conventions, pagination, `@AuthenticationPrincipal`, `@PreAuthorize`, and HTTP status codes |
 | [Unit & Integration Testing](./testing-unit-and-integration.md) | JUnit 5 + Mockito service tests, Testcontainers (`@ServiceConnection`), and `MockMvc` RBAC tests |
+| [File Upload & Storage](./file-upload-and-storage.md) | Multipart uploads, MIME validation, path traversal protection, and serving files |
+| [Microservices Architecture](./microservices-architecture.md) | API Gateway, `RestClient` / `@HttpExchange`, Resilience4j circuit breakers, and Transactional Outbox |
+| [Microservice Folder Structure](./microservice-folder-structure.md) | Monorepo workspace layout, internal microservice packages, and sharing `.proto` contracts |
+| [gRPC in Spring Boot](./grpc-in-spring-boot.md) | Protocol Buffers (`proto3`), Maven `protoc` setup, `@GrpcService` server, and `@GrpcClient` consumer |
 
 ---
 
